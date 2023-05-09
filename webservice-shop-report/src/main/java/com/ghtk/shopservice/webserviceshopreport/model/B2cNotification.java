@@ -1,8 +1,5 @@
 package com.ghtk.shopservice.webserviceshopreport.model;
 
-
-import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -27,9 +24,10 @@ public class B2cNotification {
 
     private String addition;
 
-    private Integer shop_id;
+    @NotBlank(message = "shop_id is required")
+    private Integer shopId;
 
-    @NotBlank
+    @NotBlank(message = "role is required")
     private String role;
 
     private Integer read_;

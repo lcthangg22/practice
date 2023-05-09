@@ -1,4 +1,4 @@
-package com.ghtk.shopservice.webserviceshopreport.service;
+package com.ghtk.shopservice.webserviceshopreport.service.b2cservice;
 
 import com.ghtk.shopservice.webserviceshopreport.model.B2cNotification;
 import com.ghtk.shopservice.webserviceshopreport.repository.B2cRepository;
